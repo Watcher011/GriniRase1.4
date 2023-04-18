@@ -3,7 +3,6 @@
 
 
 	<AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
-		<thingClass>Pawn</thingClass>
 		<defName>Alien_Grini</defName>
 		<label>Зеленые Гринюки</label>
 		<description>Гринюки обладают невысоким ростом, крупным черепом и добрыми глазами. Их кожа грубая и покрыта шерстью, всевозможных оттенков зелёного. Несмотря на достаточно хрупкое строение тела, Гринюки не чураются тяжелого труда, они по своей природе превосходные строители, инженеры и изобретатели.
@@ -17,6 +16,9 @@
 В случае сильного падения морали, например, если в колонии присутствуют гномы, Гринюки не покидают промышленность, а саботируют промышленность, вплоть до разрушения зданий и так горячо любимых ими механизмов.</description>
 		<alienRace>
 			<generalSettings>
+			<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>   
+				<immuneToXenophobia>false</immuneToXenophobia>
 				<humanRecipeImport>true</humanRecipeImport>
 				<maleGenderProbability>0.5</maleGenderProbability>
 				<forcedRaceTraitEntries>
@@ -34,7 +36,9 @@
 					</li>
 				</disallowedTraits>
 				<alienPartGenerator>
-			        	<headOffset>(0,0)</headOffset>	
+			        	<headOffset>(0, -0.09)</headOffset>	
+						<atlasScale>2</atlasScale>
+					<borderScale>1</borderScale>
 				    	<headTypes>
 						<li>Male_AverageNormal</li>
 						<li>Female_AverageNormal</li>
@@ -51,7 +55,6 @@
 					<customPortraitDrawSize>(0.85, 1.1)</customPortraitDrawSize>
 					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
 					<oldHairAgeRange>80.0~120.0</oldHairAgeRange>
-					
 					 <!--
 					<aliencrowntypes>
 						           <li>Average_Normal</li>
@@ -511,8 +514,8 @@
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
-			<nameGenerator>NamerPersonGriniMale</nameGenerator>
-			<nameGeneratorFemale>NamerPersonGriniFemale</nameGeneratorFemale>
+			<nameGenerator>NamerPersonNovaMale</nameGenerator>
+			<nameGeneratorFemale>NamerPersonNovaFemale</nameGeneratorFemale>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>140</lifeExpectancy>
 			<baseBodySize>0.8</baseBodySize>
@@ -605,6 +608,7 @@
 				<volume>(0.3, 0.8, 0.4)</volume>
 				<offset>(0,0,-0.3)</offset>
 			</specialShadowData>
+			
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
 				<li>Human</li>
