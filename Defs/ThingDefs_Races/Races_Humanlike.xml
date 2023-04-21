@@ -436,7 +436,7 @@
 			<Flammability>0.5</Flammability>
 			<PsychicSensitivity>0.90</PsychicSensitivity>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-			<ComfyTemperatureMax>23</ComfyTemperatureMax>
+			<ComfyTemperatureMax>29</ComfyTemperatureMax>
 			  <ConstructSuccessChance>1.1</ConstructSuccessChance>
 			<ConstructionSpeed>1.55</ConstructionSpeed>
 			<CollectingSpeed>1</CollectingSpeed>
@@ -514,8 +514,8 @@
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
-			<nameGenerator>NamerPersonNovaMale</nameGenerator>
-			<nameGeneratorFemale>NamerPersonNovaFemale</nameGeneratorFemale>
+			<nameGenerator>NamerPersonGriniMale</nameGenerator>
+			<nameGeneratorFemale>NamerPersonGriniFemale</nameGeneratorFemale>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>140</lifeExpectancy>
 			<baseBodySize>0.8</baseBodySize>
