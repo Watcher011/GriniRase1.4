@@ -91,8 +91,8 @@
     </titleSelectOne>
 		<combatPower>180</combatPower>
 		<apparelRequired>
-			<li>Apparel_HuskerHood</li>
-			<li>Apparel_CollarShirt</li>
+			<li>Jaffa_BasicHelmet</li>
+			<li>Apparel_FlakJacket</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>1100</min>
@@ -156,7 +156,7 @@
     </titleSelectOne>
 		<combatPower>170</combatPower>
 		<apparelRequired>
-			<li>Apparel_HuskerHood</li>
+			<li>Jaffa_BasicHelmet</li>
 			<li>Apparello_Tunic</li>
 		</apparelRequired>
 		<apparelTags>
@@ -410,7 +410,7 @@
 			<max>2.3</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>Apparel_CollarShirt</li>
+			<li>Apparel_FlakJacket</li>
 			<li>Apparel_GrinderHelmet</li>
 		</apparelRequired>
 		<apparelTags>
@@ -467,7 +467,7 @@
 		<label>Гринюк Охотник</label>
 		<combatPower>210</combatPower>
 		<apparelRequired>
-			<li>Apparel_CollarShirt</li>
+			<li>Apparel_FlakJacket</li>
 			<li>Apparel_SkulkerHood</li>
 		</apparelRequired>
 		<apparelMoney>
