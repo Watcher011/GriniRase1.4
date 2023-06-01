@@ -4,13 +4,22 @@
 
 	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
 		<defName>Grini</defName>
-		<label>Таинственный зелёный незнакомец</label>
+		<label>Поселенец</label>
 		<race>Alien_Grini</race>
+		 <xenotypeSet>
+      <xenotypeChances>
+        <Baseline_Grini>999</Baseline_Grini>
+      </xenotypeChances>
+    </xenotypeSet>
 		<defaultFactionType>PlayerGrini</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
 			<li>BrotherhoodLight</li>
 		</apparelTags>
+		<apparelRequired>
+      <li>Apparello_Shadess</li>
+      <li>Apparello_XcomOne</li>
+    </apparelRequired>
 		<apparelMoney>
 			<min>4000</min>
 			<max>6000</max>
@@ -57,10 +66,22 @@
     <defName>GriniColonist</defName>
     <defaultFactionType>PlayerGrini</defaultFactionType>
     <race>Alien_Grini</race>
+	 <xenotypeSet>
+      <xenotypeChances>
+        <Baseline_Grini>999</Baseline_Grini>
+      </xenotypeChances>
+    </xenotypeSet>
+	<apparelRequired>
+      <li>Apparello_Shadess</li>
+      <li>Carbon_overalls</li>
+    </apparelRequired>
 		<backstoryCategories>
 			<li>Offworld</li>
 		</backstoryCategories>
-		
+	 <royalTitleChance>0.1</royalTitleChance>
+    <titleSelectOne>
+      <li>JunShaman</li>
+    </titleSelectOne>	
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
     <apparelTags>
       <li>Outlander</li>
@@ -134,6 +155,7 @@
         <Baseline_Grini>999</Baseline_Grini>
       </xenotypeChances>
     </xenotypeSet>
+	
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
     <label>Шахтёр</label>
     <combatPower>35</combatPower>
@@ -222,5 +244,100 @@
   </PawnKindDef>	
 	
 	
-	
+	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+		<defName>Shaman</defName>
+		<label>Пси-Гринюк</label>
+		<race>Alien_Grini_White</race>
+		 <xenotypeSet>
+      <xenotypeChances>
+        <Baseline_Grini>999</Baseline_Grini>
+      </xenotypeChances>
+    </xenotypeSet>
+		 <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne>
+      <li>Shaman</li>
+    </titleSelectOne>
+		<defaultFactionType>PlayerGrini</defaultFactionType>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		 <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <requiredTag>RoyalTier6</requiredTag>
+        <stuff>Plasteel</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer>
+        <requiredTag>RoyalTier5</requiredTag>
+        <color>(27, 78, 171)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <requiredTag>RoyalTier2</requiredTag>
+        <color>(27, 78, 171)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <requiredTag>RoyalTier6</requiredTag>
+        <color>(250, 250, 250)</color>
+        <alternateTagChoices>
+          <li>
+            <tag>Cape</tag>
+            <chance>0.5</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Hyperweave</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Hyperweave</stuff>
+      </li>
+    </specificApparelRequirements>
+		<apparelTags>
+			<li>BrotherhoodLight</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>4000</min>
+			<max>99000</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>2600</min>
+			<max>99100</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+      <li>EltexStaff</li>
+    </weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>14</min>
+					<max>16</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.3</generateChance>
+						<sidearmMoney>
+							<min>0</min>
+							<max>50</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierOne</li>
+						</weaponTags>
+						<magazineCount>
+							<min>2</min>
+							<max>4</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
 </Defs>

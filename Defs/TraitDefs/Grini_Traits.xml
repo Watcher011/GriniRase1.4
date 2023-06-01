@@ -20,6 +20,9 @@
           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.5</CertaintyLossFactor>
         </statFactors>
       </li>
+	            <li> <allowedMeditationFocusTypes>
+					<li>Artistic</li>
+				</allowedMeditationFocusTypes> </li>
     </degreeDatas>
   </TraitDef>
 </Defs>
