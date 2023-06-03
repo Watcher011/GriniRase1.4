@@ -4,12 +4,50 @@
 	<PawnKindDef Name="GriniBase" Abstract="True">
 		<race>Alien_Grini</race>
 		<chemicalAddictionChance>0.15</chemicalAddictionChance>
-		<defaultFactionType>Feral</defaultFactionType>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
 		<backstoryFilters>
 			<li>
 				<categories>
 					<li>Offworld</li>
-					<li>Pirate</li>
+					<li>Farmer</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<invNutrition>2</invNutrition>
+		<invFoodDef>RoastedMeat</invFoodDef>
+		<itemQuality>Normal</itemQuality>
+		<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>58</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>1.9</max>
+		</gearHealthRange>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>7500</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>0.4</techHediffsChance>
+		<techHediffsMaxAmount>3</techHediffsMaxAmount>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="GriniWhiteBase" Abstract="True">
+		<race>Alien_Grini_White</race>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Farmer</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -49,13 +87,27 @@
 		<isFighter>false</isFighter>
 		<defaultFactionType />
 		<maxGenerationAge>38</maxGenerationAge>
-		<apparelTags>
-			<li>Outlander</li>
-		</apparelTags>
 		<apparelMoney>
 			<min>1200</min>
 			<max>1500</max>
 		</apparelMoney>
+		<apparelTags>
+			<li>PredatorsLight</li>
+			<li>BanditsLight</li>
+			<li>Outlander</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>1200</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>PT1</li>
+			<li>Gun</li>
+			<li>TierOnePistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
 		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
 		<initialWillRange>1~2</initialWillRange>
 		<initialResistanceRange>5~12</initialResistanceRange>
@@ -91,30 +143,30 @@
     </titleSelectOne>
 		<combatPower>180</combatPower>
 		<apparelRequired>
-			<li>Jaffa_BasicHelmet</li>
-			<li>Apparel_FlakJacket</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>1100</min>
 			<max>1550</max>
 		</apparelMoney>
 		<apparelTags>
-			<li>Outlander</li>
 			<li>PredatorsLight</li>
-			<li>PredatorsUnique</li>
+			<li>BanditsLight</li>
+			<li>PredatorsMedium</li>
 		</apparelTags>
 		<weaponMoney>
 			<min>500</min>
 			<max>1200</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>PT1</li>
-			<li>RF4</li>
-            <li>AdvancedGun</li>
-			<li>IndustrialGunAdvanced</li>
-            <li>TierTwoRifle</li>
-            <li>CE_AI_Rifle</li>
-			<li>AssaultRifle</li>
+			 <li>SMG1</li>
+			 <li>SMG2</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -156,8 +208,8 @@
     </titleSelectOne>
 		<combatPower>170</combatPower>
 		<apparelRequired>
-			<li>Jaffa_BasicHelmet</li>
-			<li>Apparello_Tunic</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>Outlander</li>
@@ -219,12 +271,11 @@
     </titleSelectOne>
 		<combatPower>195</combatPower>
 		<apparelRequired>
-			<li>Apparello_Urbulence</li>
-			<li>Apparel_ScorcherHelmet</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>PredatorsScout</li>
+			<li>PredatorsMedium</li>
 			<li>PredatorsUnique</li>
 		</apparelTags>
 		<apparelMoney>
@@ -236,12 +287,10 @@
 			<max>1500</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>RF1</li>
-			<li>ST1</li>
-			 <li>RF4</li>
-            <li>AdvancedGun</li>
+			  <li>RF3</li>
 			<li>IndustrialGunAdvanced</li>
             <li>TierTwoRifle</li>
+            <li>TierOneRifle</li>
             <li>CE_AI_Rifle</li>
 		</weaponTags>
 		<disallowedTraits>
@@ -278,7 +327,7 @@
 	<PawnKindDef ParentName="GriniBase">
 		<defName>GriniBoomer</defName>
 		<label>Гринюк Подрывник</label>
-		<combatPower>180</combatPower>
+		<combatPower>265</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>48</maxGenerationAge>
@@ -287,8 +336,8 @@
 			<max>2.3</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>Apparello_Urbulence</li>
-			<li>Apparel_ScorcherHelmet</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelTags>
 			<li>Outlander</li>
@@ -301,12 +350,17 @@
 			<max>2800</max>
 		</apparelMoney>
 		<weaponMoney>
-			<min>17</min>
-			<max>35</max>
+			<min>170</min>
+			<max>4000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>GrenadeTierOne</li>
-			<li>GrenadeTierTwo</li>
+			 <li>RKT3</li>
+            <li>Launchers</li>
+            <li>SyndicateLaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>CE_AI_AOE</li>
+			<li>EmpireGrenadeDestructive</li>
 		</weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -333,13 +387,12 @@
 		<combatPower>210</combatPower>
 		<maxGenerationAge>65</maxGenerationAge>
 		<apparelRequired>
-			<li>Apparello_Tunic</li>
-			<li>Apparel_ThumperHood</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>PredatorsMedium</li>
-			<li>PredatorsUnique</li>
+			<li>OrassanTacticalSuit</li>
+			<li>OrassanTacticalEngineer</li>
 		</apparelTags>
 		<apparelMoney>
 			<min>1200</min>
@@ -410,15 +463,12 @@
 			<max>2.3</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>Apparel_FlakJacket</li>
-			<li>Apparel_GrinderHelmet</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelTags>
-			<li>Outlander</li>
-			<li>PredatorsUnique</li>
-			<li>PredatorsLight</li>
-			<li>MedievalShield</li>
-			<li>BoneShield</li>
+			<li>OrassanTacticalSuit</li>
+			<li>OrassanTacticalEngineer</li>
 		</apparelTags>
 		<apparelMoney>
 			<min>1160</min>
@@ -429,7 +479,12 @@
 			<max>260</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>MedievalMelee</li>
+			 <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
 		</weaponTags>
 		<techHediffsMoney>
 			<min>2000</min>
@@ -467,8 +522,8 @@
 		<label>Гринюк Охотник</label>
 		<combatPower>210</combatPower>
 		<apparelRequired>
-			<li>Apparel_FlakJacket</li>
-			<li>Apparel_SkulkerHood</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>1100</min>
@@ -521,7 +576,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Elite Base -->
-	<PawnKindDef Abstract="True" Name="GriniEliteBase" ParentName="GriniBase">
+	<PawnKindDef Abstract="True" Name="GriniEliteBase" ParentName="GriniWhiteBase">
 		<gearHealthRange>
 			<min>0.8</min>
 			<max>2.7</max>
@@ -532,7 +587,8 @@
 			<li>PredatorsUnique</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>Apparel_ThumperHood</li>
+		    <li>Tactical_Helmet</li>
+			<li>Rimarsenal_VestPlate</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>1400</min>
@@ -559,7 +615,7 @@
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
 					<min>5</min>
-					<max>6</max>
+					<max>12</max>
 				</primaryMagazineCount>
 				<sidearms>
 					<li>

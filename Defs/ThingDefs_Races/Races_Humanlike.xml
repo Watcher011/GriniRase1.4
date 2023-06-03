@@ -922,7 +922,7 @@
 			<MarketValue>2750</MarketValue>
 			<MoveSpeed>5.25</MoveSpeed>
 			<Flammability>0.5</Flammability>
-			<PsychicSensitivity>0.90</PsychicSensitivity>
+			<PsychicSensitivity>1.2</PsychicSensitivity>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>29</ComfyTemperatureMax>
 			  <ConstructSuccessChance>1.1</ConstructSuccessChance>

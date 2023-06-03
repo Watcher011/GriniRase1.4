@@ -78,7 +78,7 @@
 		<backstoryCategories>
 			<li>Offworld</li>
 		</backstoryCategories>
-	 <royalTitleChance>0.1</royalTitleChance>
+	 <royalTitleChance>0.01</royalTitleChance>
     <titleSelectOne>
       <li>JunShaman</li>
     </titleSelectOne>	
@@ -250,7 +250,7 @@
 		<race>Alien_Grini_White</race>
 		 <xenotypeSet>
       <xenotypeChances>
-        <Baseline_Grini>999</Baseline_Grini>
+        <Baseline_Grini_Whaite>999</Baseline_Grini_Whaite>
       </xenotypeChances>
     </xenotypeSet>
 		 <royalTitleChance>1</royalTitleChance>

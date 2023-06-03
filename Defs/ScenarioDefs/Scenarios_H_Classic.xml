@@ -54,7 +54,7 @@
           <xenotypeCounts>
             <li>
               <xenotype>Baseline_Grini</xenotype>
-              <count>3</count>
+              <count>2</count>
               <description>non-baby sanguophage</description>
               <requiredAtStart>true</requiredAtStart>
               <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
