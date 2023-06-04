@@ -7,7 +7,7 @@
 		<description>Сложный генотип Гринюка.</description>
 		<descriptionShort>Сложный генотип Гринюка.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/GrinMain</iconPath>
-		<nameMaker>NamerPersonOrassan</nameMaker>
+		<nameMaker>NamerGrini</nameMaker>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<inheritable>true</inheritable>
 		<genes>
@@ -27,7 +27,7 @@
 		<description>Сложный генотип Гринюка.</description>
 		<descriptionShort>Сложный генотип Гринюка.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/GrinMain</iconPath>
-		<nameMaker>NamerPersonOrassan</nameMaker>
+		<nameMaker>NamerGrini</nameMaker>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<inheritable>true</inheritable>
 		<genes>
