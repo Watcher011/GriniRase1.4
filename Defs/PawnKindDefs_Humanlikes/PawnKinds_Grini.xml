@@ -592,15 +592,15 @@
 		</apparelRequired>
 		<apparelMoney>
 			<min>1400</min>
-			<max>1850</max>
+			<max>2850</max>
 		</apparelMoney>
 		<weaponMoney>
 			<min>1500</min>
-			<max>2550</max>
+			<max>3550</max>
 		</weaponMoney>
 		<techHediffsMoney>
 			<min>2000</min>
-			<max>3000</max>
+			<max>4000</max>
 		</techHediffsMoney>
 		<techHediffsTags>
 			<li>Advanced</li>
@@ -639,11 +639,12 @@
 	<!-- Leader -->
 	<PawnKindDef ParentName="GriniEliteBase">
 		<defName>GriniBomb</defName>
-		<label>Гринюк Гренадёр</label>
-		<combatPower>250</combatPower>
+		<label>Гринюк Последнего Дня</label>
+		<combatPower>1250</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
 		<weaponTags>
+		   <li>GunLAstDay</li>
 			<li>GLT1</li>
 		</weaponTags>
 	</PawnKindDef>
